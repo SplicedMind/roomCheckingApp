@@ -1,42 +1,69 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
-  <head>
-    <title>Rooms</title>
-    <script type="text/javascript" src="JScript/getRoom.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css">    
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <title>Rooms</title>
+  <style>
+
+</style>
 </head>
 
 <body>
 
+       
 <!-- Main content -->
-<h1>ROOMS</h1>
+<img src="images/index.png" align="left">
+<center>
+<div class="bordered">
+<h1><center>ROOMS</center></h1>
 
-<p>Here you can acess available rooms</p>
+<p><h2><center>Here you can access room categories and availability</center></h2></p>
 
-<p> </p>
 
-<p>Select your room below
+<p><h3><center>Select your room below</center></h3></p>
+<!-- Category list -->
+<center>
+<div class="dropdown">
+<button onClick="myFunction()" class="dropbtn">Click to  view room categories</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Meeting room</a>
+    <a href="#">Games room</a>
+    <a href="#">Quiet time room</a>
+    <a href="#">Learning room</a>
+    <a href="#">Working room</a>
+  </div>
+</div>
+</center>
+<!-- Enter the code for display of the available rooms here-->
+</div>
+</center>
 
-<!-- Category table -->
-<ul class="bordered">
-  <table width="500" height="444" border="0">
-  <tr>
-    <td>Meeting Room</td>
-  </tr>
-  <tr>
-    <td>Games room</td>
-  </tr>
-  <tr>
-    <td>Quiet time room</td>
-  </tr>
-  <tr>
-    <td>Learning room</td>
-  </tr>
-  <tr>
-    <td>Working Room</td>
-  </tr>
-</table>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
 
 
