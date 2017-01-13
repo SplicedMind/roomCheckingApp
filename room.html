@@ -1,42 +1,96 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
-  <head>
-    <title>Rooms</title>
-    <script type="text/javascript" src="JScript/getRoom.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css">    
+<head>
+  <title>Rooms</title>
+  <style>
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+</style>
 </head>
 
 <body>
 
+       
 <!-- Main content -->
-<h1>ROOMS</h1>
+<h1><center>ROOMS</center></h1>
 
-<p>Here you can acess available rooms</p>
+<p><h2><center>Here you can access room categories and availability</center></h2></p>
 
-<p> </p>
 
-<p>Select your room below
-
+<p><h3><center>Select your room below</center></h3></p>
 <!-- Category table -->
-<ul class="bordered">
-  <table width="500" height="444" border="0">
-  <tr>
-    <td>Meeting Room</td>
-  </tr>
-  <tr>
-    <td>Games room</td>
-  </tr>
-  <tr>
-    <td>Quiet time room</td>
-  </tr>
-  <tr>
-    <td>Learning room</td>
-  </tr>
-  <tr>
-    <td>Working Room</td>
-  </tr>
-</table>
+<center>
+<div class="dropdown">
+<button onClick="myFunction()" class="dropbtn">Click to  view room categories</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Meeting room</a>
+    <a href="#">Games room</a>
+    <a href="#">Quiet time room</a>
+    <a href="#">Learning room</a>
+    <a href="#">Working room</a>
+  </div>
+</div>
+</center>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
 
 
