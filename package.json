@@ -1,0 +1,19 @@
+{
+  "name": "roomcheckingapp",
+  "version": "1.0.0",
+  "description": "An app that allows user's to see available rooms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SplicedMind/roomCheckingApp.git"
+  },
+  "author": "Group 4",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SplicedMind/roomCheckingApp/issues"
+  },
+  "homepage": "https://github.com/SplicedMind/roomCheckingApp#readme"
+}
