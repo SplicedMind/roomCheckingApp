@@ -5,6 +5,7 @@
 <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="JScript/getRoom.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
   <title>Rooms</title>
   <style>
@@ -28,13 +29,17 @@
 <!-- Category list -->
 <center>
 <div class="dropdown">
-<button onClick="myFunction()" class="dropbtn">Click to  view room categories</button>
+  <select id='s'>
+      <option>Select a room category</option>
+      <option value='Meeting room' >Meeting room</option>
+      <option>Games room</option>
+      <option>Quiet time room</option>
+      <option>Learning room</option>
+      <option>Working room</option>
+    </select>
+<button onClick="return getRoom(document.getElemetById(s).value);" class="dropbtn">Click to  view room categories</button>
+<p id='d'></p>
   <div id="myDropdown" class="dropdown-content">
-    <a href="#">Meeting room</a>
-    <a href="#">Games room</a>
-    <a href="#">Quiet time room</a>
-    <a href="#">Learning room</a>
-    <a href="#">Working room</a>
   </div>
 </div>
 </center>

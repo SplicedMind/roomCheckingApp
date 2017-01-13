@@ -1,4 +1,5 @@
-var meetingRoom = {
+function getRoom(room) {
+  var meetingRoom = {
   'Meeting Room 1': 'Avialable',
   'Meeting Room 2': 'Not Avialable',
   'Meeting Room 3': 'Not Avialable',
@@ -31,9 +32,9 @@ var workingRoom = {
   'Working Room 5': 'Avialable'
 };
 
-var getRoom = function (room) {
   if (room === 'meeting room') {
-    return meetingRoom;
+    document.getElementById('d').innerHTML = meetingRoom.toString();
+    return true;
   } else if (room === 'learning room') {
     return learnRoom;
   }else if (room === 'games room') {
