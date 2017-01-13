@@ -1,11 +1,18 @@
 function validateLogin()
 {
 	var box = document.getElementById("email").value;
-	if (!box.endsWith("andela.com"))
+	if (box === null || box === "")
 	{
-		
-		alert("You have to enter a valid email!");
+		document.getElementById('m').innerHTML = "Please enter your email";
 		return false;
 	}
-	
+	else if (box.endsWith("andela.com"))
+	{	
+		return true;		
+	}
+	else
+	{
+		document.getElementById('m').innerHTML = "Invalid email address, please enter a valid email";
+		return false;
+	}
 }
