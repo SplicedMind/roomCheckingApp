@@ -235,20 +235,3 @@ input:-webkit-autofill {
     color: #767676;
     text-align: center;
 }
-
-.site-footer-links li {
-	display: inline-block;
-    line-height: 16px;
-    margin-left: 10px;
-}
-
-.site-footer::before {
-	display: table;
-    content: "";
-}
-
-.site-footer::after {
-	display: table;
-    clear: both;
-    content: "";
-}
