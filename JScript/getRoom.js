@@ -1,33 +1,35 @@
 var meetingRoom = {
-  'AWD1': 'Avialable',
-  'AWD2': 'Not Avialable',
-  'AWD3': 'Not Avialable',
-  'AWD4': 'Not Avialable',
-}
+  'Meeting Room 1': 'Avialable',
+  'Meeting Room 2': 'Not Avialable',
+  'Meeting Room 3': 'Not Avialable',
+  'Meeting Room 4': 'Not Avialable'
+};
 var learnRoom = {
-  'AWD1': 'Avialable',
-  'AWD2': 'Avialable',
-  'AWD3': 'Not Avialable',
-  'AWD4': 'Not Avialable',
-}
+  'Learning Room 1': 'Avialable',
+  'Learning Room 2': 'Avialable',
+  'Learning Room 3': 'Not Avialable',
+  'Learning Room 4': 'Not Avialable',
+  'Learning Room 5': 'Avialable'
+};
 var gamesRoom = {
-  'AWD1': 'Avialable',
-  'AWD2': 'Avialable',
-  'AWD3': 'Not Avialable',
-  'AWD4': 'Avialable',
-}
+  'Games Room 1': 'Avialable',
+  'Games Room 2': 'Avialable',
+  'Games Room 3': 'Not Avialable',
+  'Games Room 4': 'Avialable'
+};
 var quietTime = {
-  'AWD1': 'Avialable',
-  'AWD2': 'Not Avialable',
-  'AWD3': 'Not Avialable',
-  'AWD4': 'Avialable',
-}
+  'Quiet Room 1': 'Avialable',
+  'Quiet Room 2': 'Not Avialable',
+  'Quiet Room 3': 'Not Avialable',
+  'Quiet Room 4': 'Avialable'
+};
 var workingRoom = {
-  'AWD1': 'Avialable',
-  'AWD2': 'Avialable',
-  'AWD3': 'Not Avialable',
-  'AWD4': 'Not Avialable',
-}
+  'Working Room 1': 'Avialable',
+  'Working Room 2': 'Avialable',
+  'Working Room 3': 'Not Avialable',
+  'Working Room 4': 'Not Avialable',
+  'Working Room 5': 'Avialable'
+};
 
 var getRoom = function (room) {
   if (room === 'meeting room') {
