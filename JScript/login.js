@@ -9,6 +9,7 @@ function validateLogin()
 	{
 		box.focus();
 		box.style.border ="2px solid red";
-		box.value = "Enter a valid email!";
+		box.value = " Please enter a valid email!";
 		return false;
     }
+}    
