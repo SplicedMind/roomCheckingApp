@@ -29,15 +29,15 @@
 <!-- Category list -->
 <center>
 <div class="dropdown">
-  <select id='s'>
+  <select id='s'onSelect='return getRoom();'>
       <option>Select a room category</option>
-      <option value='Meeting room' >Meeting room</option>
-      <option>Games room</option>
-      <option>Quiet time room</option>
-      <option>Learning room</option>
-      <option>Working room</option>
+      <option value='meetingRoom' >Meeting room</option>
+      <option value='gamesRoom'>Games room</option>
+      <option value='quietTimeRoom'>Quiet time room</option>
+      <option value='learningRoom'>Learning room</option>
+      <option value='workingRoom'>Working room</option>
     </select>
-<button onClick="return getRoom(document.getElemetById(s).value);" class="dropbtn">Click to  view room categories</button>
+<button onClick="return getRoom();" class="dropbtn">Click to  view room categories</button>
 <p id='d'></p>
   <div id="myDropdown" class="dropdown-content">
   </div>
