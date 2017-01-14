@@ -12,3 +12,4 @@ function validateLogin()
 		box.value = "Enter a valid email!";
 		return false;
     }
+}    
