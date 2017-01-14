@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
-
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="JScript/login.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <title>Room Checking App - Andela</title>
   </head>
   <body>
@@ -17,14 +17,15 @@
       <div role="main">
         <div id="">
           <div class="form-div px-3">
-            <form>
+            <form onSubmit="return validateLogin();" action ="room.html" method = "post">
               <div class="form-header">
                 <h1>Room Checking App</h1>
               </div>
               <div class="form-body">
                 <label>Enter Email address</label>
-                <input class="form-control input-block" name="login">
-                <input class="button" type="submit" value="Log in">
+                <input class="form-control input-block" id="email" name="login">
+                <input class="button" type="submit" value="Log in" onClick = "return validateLogin();">
+                <p id = 'm'></p>
               </div></form>
           </div>
         </div>
