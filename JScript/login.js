@@ -1,11 +1,15 @@
 function validateLogin()
 {
-	var box = document.getElementById("email").value;
-	if (!box.endsWith("andela.com"))
+	var box = document.getElementById("email")
+	if (box.value.endsWith("andela.com") && box.value.length > 11)
 	{
-		
-		alert("You have to enter a valid email!");
-		return false;
+		return true;
 	}
-	
+	else 
+	{
+		box.focus();
+		box.style.border ="2px solid red";
+		box.value = "Enter a valid email!";
+		return false;
+    }
 }
