@@ -1,18 +1,14 @@
 function validateLogin()
 {
-	var box = document.getElementById("email").value;
-	if (box === null || box === "")
+	var box = document.getElementById("email")
+	if (box.value.endsWith("andela.com") && box.value.length > 11)
 	{
-		document.getElementById('m').innerHTML = "Please enter your email";
-		return false;
+		return true;
 	}
-	else if (box.endsWith("andela.com"))
-	{	
-		return true;		
-	}
-	else
+	else 
 	{
-		document.getElementById('m').innerHTML = "Invalid email address, please enter a valid email";
+		box.focus();
+		box.style.border ="2px solid red";
+		box.value = "Enter a valid email!";
 		return false;
-	}
-}
+    }
